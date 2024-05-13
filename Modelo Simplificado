@@ -1,0 +1,125 @@
+public class Unidade {
+    private int pontosDeVida;
+    private int velocidade;
+    private int dano;
+
+    
+    public Unidade(int pontosDeVida, int velocidade, int dano) {
+        this.pontosDeVida = pontosDeVida;
+        this.velocidade = velocidade;
+        this.dano = dano;
+    }
+
+    
+    public int getPontosDeVida() {
+        return pontosDeVida;
+    }
+
+    public void setPontosDeVida(int pontosDeVida) {
+        this.pontosDeVida = pontosDeVida;
+    }
+
+    public int getVelocidade() {
+        return velocidade;
+    }
+
+    public void setVelocidade(int velocidade) {
+        this.velocidade = velocidade;
+    }
+
+    public int getDano() {
+        return dano;
+    }
+
+    public void setDano(int dano) {
+        this.dano = dano;
+    }
+}
+
+
+public class TropaTerrestre extends Unidade {
+    private boolean ataqueCorpoACorpo;
+
+    
+    public TropaTerrestre(int pontosDeVida, int velocidade, int dano, boolean ataqueCorpoACorpo) {
+        super(pontosDeVida, velocidade, dano);
+        this.ataqueCorpoACorpo = ataqueCorpoACorpo;
+    }
+
+    
+    public boolean isAtaqueCorpoACorpo() {
+        return ataqueCorpoACorpo;
+    }
+
+    public void setAtaqueCorpoACorpo(boolean ataqueCorpoACorpo) {
+        this.ataqueCorpoACorpo = ataqueCorpoACorpo;
+    }
+}
+
+
+public class Feitico {
+    private int custoDeElixir;
+    private int dano;
+
+    
+    public Feitico(int custoDeElixir, int dano) {
+        this.custoDeElixir = custoDeElixir;
+        this.dano = dano;
+    }
+
+    
+    public int getCustoDeElixir() {
+        return custoDeElixir;
+    }
+
+    public void setCustoDeElixir(int custoDeElixir) {
+        this.custoDeElixir = custoDeElixir;
+    }
+
+    public int getDano() {
+        return dano;
+    }
+
+    public void setDano(int dano) {
+        this.dano = dano;
+    }
+}
+
+
+public class ConstrucaoDefensiva extends Unidade {
+    private int alcance;
+
+    
+    public ConstrucaoDefensiva(int pontosDeVida, int velocidade, int dano, int alcance) {
+        super(pontosDeVida, velocidade, dano);
+        this.alcance = alcance;
+    }
+
+   
+    public int getAlcance() {
+        return alcance;
+    }
+
+    public void setAlcance(int alcance) {
+        this.alcance = alcance;
+    }
+}
+
+
+public class HabilidadeEspecial {
+    private int custoDeElixir;
+
+    
+    public HabilidadeEspecial(int custoDeElixir) {
+        this.custoDeElixir = custoDeElixir;
+    }
+
+    
+    public int getCustoDeElixir() {
+        return custoDeElixir;
+    }
+
+    public void setCustoDeElixir(int custoDeElixir) {
+        this.custoDeElixir = custoDeElixir;
+    }
+}
